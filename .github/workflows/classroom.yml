@@ -187,7 +187,7 @@ jobs:
         command: java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path
           build --select-method miTest.AppTest#testCadenaAgregarBorrar
         timeout: 10
-        max-score: 5
+        max-score: 0
     - name: testCadenaLlena
       id: testcadenallena
       uses: classroom-resources/autograding-command-grader@v1
@@ -197,7 +197,7 @@ jobs:
         command: java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path
           build --select-method miTest.AppTest#testCadenaLlena
         timeout: 10
-        max-score: 5
+        max-score: 0
     - name: testCadenaInvertir
       id: testcadenainvertir
       uses: classroom-resources/autograding-command-grader@v1
@@ -207,7 +207,7 @@ jobs:
         command: java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path
           build --select-method miTest.AppTest#testCadenaInvertir
         timeout: 10
-        max-score: 5
+        max-score: 0
     - name: testPunto
       id: testpunto
       uses: classroom-resources/autograding-command-grader@v1
