@@ -96,7 +96,7 @@ class AppTest {
         assertTrue(a.equal(b));
 
         c = new Rational(6,5);
-        assertFalse(a.equal(c));
+        assertFalse(a.equals(c));
     }
 
     @Test public void testMatriz(){
@@ -324,15 +324,16 @@ class AppTest {
 
 
     @Test public void testPersona(){
-        p1 = new Persona("AELL680211","Lourdes Armenta",new Fecha("11/2/1968"));
-        f1 = new Fecha(11,2,1968);
-        assertTrue(p1.getDni().equals("AELL680211"));
-        assertTrue(p1.getNombre().equals("Lourdes Armenta"));
+        p1 = new Persona("AELL777711","Misael Ruiz",new Fecha("17/05/2005"));
+        f1 = new Fecha(17,05,2005);
+        assertTrue(p1.getDni().equals("AELL777711"));
+        assertTrue(p1.getNombre().equals("Misael Ruiz"));
         assertTrue(p1.getFechaNacimiento().equals(f1));
+        assertNotNull(p1);
     }
 
     @Test public void testCuentaCheques(){
-        cuenta = new Cuenta_Cheques("ahorro","Lourdes Armenta","Las Quintas"); 
+        cuenta = new Cuenta_Cheques("ahorro","Misael Ruiz","Imala"); 
         assertTrue(cuenta.muestra_saldo()==0);
         cuenta.deposito(750);
         assertTrue(cuenta.muestra_saldo()==750);

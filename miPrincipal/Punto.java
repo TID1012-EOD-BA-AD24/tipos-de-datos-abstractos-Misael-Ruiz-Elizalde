@@ -20,6 +20,7 @@ public class Punto{
 	      this.y = 0;
 	   }
 	   public int getX() {
+		return x;
 		   //coloca el codigo faltante
 		}
 		public int getY() {
@@ -56,8 +57,9 @@ public class Punto{
 		}
 		public double distancia(Punto p) {
 			double d;
-			d = Math.sqrt(Math.pow(p.x-this.x,2) + Math.pow(p.y-this.y,2));
-			//coloca aquí el código faltante
+        d = Math.sqrt(Math.pow(p.getX()-this.getX(),2) + 
+                      Math.pow(p.getY()-this.getY(),2));
+        return d;
 		}
 		
 

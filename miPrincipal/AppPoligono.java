@@ -8,13 +8,14 @@ public class AppPoligono {
         System.out.println("   Operaciones con Polígonos      ");
         System.out.println("==================================");
         
-        Scanner entrada = new Scanner(System.in);
-		System.out.print("Dame lados del Poligono:");
-		int N=entrada.nextInt();
-        Poligono poligono = new Poligono(N);
-		poligono.LeerDatos();
-		poligono.DesplegarArreglo();
-		System.out.println("Perimetro = "+poligono.calcularPerimetro());
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Dame lados del Poligono:");
+            int N=entrada.nextInt();
+            Poligono poligono = new Poligono(N);
+            poligono.LeerDatos();
+            poligono.DesplegarArreglo();
+            System.out.println("Perimetro = "+poligono.calcularPerimetro());
+        }
         
     }
 

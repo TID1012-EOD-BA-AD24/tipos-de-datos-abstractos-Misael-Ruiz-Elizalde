@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class AppRational{
 
     public static void menu() throws Exception {
+        @SuppressWarnings("resource")
         Scanner consola = new Scanner(System.in);
         Rational r1 = new Rational();
         int a,b;
