@@ -13,13 +13,7 @@ public class Cadena  {
         this.cadena = cadena;
     }
     public void borrarInicio(){
-        for (int i=0;i<=tamanio;i++){
-            cadena[i]=cadena[i+1];
-
-        }
-        cadena[tamanio]=' ';
-        tamanio--;
-        System.out.println("valor de tamano"+tamanio);
+       //coloca código faltante
 
     }
     public void agregarFinal(char c) throws PosicionIlegalException{
@@ -33,11 +27,15 @@ public class Cadena  {
         
         if (!(esLetraMinuscula || esLeltraMayuscula || esDigito))
         {
-            throw new PosicionIlegalException(); 
+            //lanza una excepción
+            //coloca código faltante
         }
+
+        // asigna c al arreglo e incrementa tamanio
+        //coloca código faltante
         
 
-        cadena[tamanio++]=c;
+        
         
     }
     public boolean vacia(){
@@ -45,16 +43,11 @@ public class Cadena  {
     
     }
     public boolean llena(){
-        return (tamanio==TOPE);
+        //coloca código faltante
     }
     
     public Cadena invertir() throws PosicionIlegalException{
-        Cadena invertida = new Cadena();
-        for (int i=tamanio-1;i>=0;i--)
-        {
-            invertida.agregarFinal(cadena[i]);
-        }
-        return invertida;
+       //coloca código faltante
 
     }
     
